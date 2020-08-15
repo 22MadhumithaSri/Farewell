@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>upload</title>
+  <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+</head>
+<link rel="stylesheet" type="text/css" href="upload.css" media="screen"/>
+<body style="background-image: url(http://wowthemes.net/demo/leroy/img/dummy1.jpg);">
+  <center>
+    
+    <h1><font face="playball" size="10" color="orange">Video file should be 30mb or less than 30mb and video should be a mp4 format</font>
+  </center>
+<div class="wrapper">
+  <div class="container">
+    <h1>Upload a file</h1>
+    <div class="upload-container">
+      <div class="border-container">
+        <div class="icons fa-4x">
+          <i class="fas fa-file-image" data-fa-transform="shrink-3 down-2 left-6 rotate--45"></i>
+          <i class="fas fa-file-alt" data-fa-transform="shrink-2 up-4"></i>
+          <i class="fas fa-file-pdf" data-fa-transform="shrink-3 down-2 right-6 rotate-45"></i>
+        </div>
+        <!--<input type="file" id="file-upload">-->
+        <p class="playball" >Browse your Files</p>
+        <br>
+          <form method="post" enctype="multipart/form-data" action="upload1.php" >
+        <input type="file" name="file" multiple>
+        <br><br>
+        <input type="submit" value="Upload File" name="submit"><br>
+        </form>
+
+       <script src="upload.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
